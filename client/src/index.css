@@ -1,0 +1,84 @@
+:root {
+  --primary: #D81E5B;
+  --light: #EEE;
+  --light-alt: #61759b;
+  --dark: #131A26;
+ }
+ 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+ }
+ 
+ body {
+  /* background-color: var(--light-alt); */
+  background: rgb(0,101,219);
+  background:linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0,212,255,1)100%);
+  color: var(--light);
+ }
+ 
+ .container {
+   max-width: 20rem;
+   padding: 32px;
+   margin: 0 auto;
+ }
+ 
+ .heading{
+   text-align: center;
+ }
+ 
+ .form{
+   margin-top: 2rem;
+ }
+ 
+ .form input {
+   width: 85%;
+   padding: 3px;
+ }
+ 
+ .form button {
+   padding: 3px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .todo {
+   padding: 10px;
+   border-radius: 13px;
+   background-color: var(--dark);
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: 3fr 0.3fr;
+   transition: 0.5s;
+   cursor: pointer;
+ }
+ 
+ .checkbox {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: var(--light);
+   transition: 0.4s;
+ }
+ 
+ .check-complete .checkbox{
+   background-color: var(--primary); 
+ }
+ 
+ .check-complete .text{
+   text-decoration: line-through;
+ }
+ 
+ 
+ .text {
+   margin-left: 1rem;
+ }
+ 
+ .delete-todo {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+ }
+ 
