@@ -12,6 +12,9 @@ app.use(express.json());
 app.use(cors()); 
 
 const port = 4001; 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+  });
 
 const connectionString = process.env.MONGO_URI; 
 mongoose.connect(connectionString)
