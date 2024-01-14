@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import TodoItem from "./TodoItem";
 
-const API_BASE = 'https://to-do-app-basic-server.vercel.app/';
+const API_BASE = 'http://localhost:4001/todo';
 
 function App() {
   
